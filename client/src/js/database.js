@@ -19,7 +19,7 @@ console.error('putDb not implemented');
 // Connection to DB and version
 const jateDB = await openDB('jate', 1);
 // New transaction from (db, privileges)
-const tx = contactDb.transaction('jate', 'readonly');
+const tx = contactDb.transaction('jate', 'readwrite');
 // Open object store ('jate')
 const store = tx.objectStore('jate');
 // PUT Request
